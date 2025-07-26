@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Product Grid</title>
+  <link rel="icon" href="Media/OIP.webp" type="image/png" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgba(251, 205, 251, 0.559);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1300px;
+      width: 100%;
+    }
+
+    .card {
+      background-color: rgba(186, 108, 186, 0.459);
+      border: 1px solid rgb(136, 93, 136);
+      border-radius: 18px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 340px;
+      
+      border-radius: 20px;
+      border: 2px solid white;
+    }
+
+    h2 {
+      color: rgb(141, 18, 141);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .des, .color, .rate, .size {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 10px;
+    }
+
+    .rate {
+      font-size: large;
+    }
+
+    .oldprice {
+      color: rgb(91, 90, 90);
+      font-size: medium;
+      text-decoration: line-through;
+      margin-left: 8px;
+    }
+
+    .size div {
+      display: inline-block;
+      padding: 5px 10px;
+      background: white;
+      border: 1px solid black;
+      margin: 5px 5px 0 0;
+      cursor: pointer;
+      color: rgb(69, 39, 69);
+    }
+
+    .size div:hover {
+      background-color: darkgray;
+    }
+
+    .button {
+      background-color: rgb(136, 93, 136);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .button:hover {
+      background-color: rgb(100, 70, 100);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+   
+    <!--CARD 1-->
+    <div class="card">
+      <img src="media/Sites-FILA-Site.jpeg" alt="Shoe 1" />
+      <h2>Cloud Glide X</h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> White</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹5999/-</strong><span class="oldprice">₹9999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+    
+    <!-- CARD 2 -->
+    <div class="card">
+      <img src="media/Coturno harry potter.jpeg" alt="Shoe 2" />
+      <h2>Phantom Trail</h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> Black</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹7999/-</strong><span class="oldprice">₹9999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <img src="media/download (2).jpeg" alt="Shoe 3" />
+      <h2>Swift Pulse</h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> White</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹4999/-</strong><span class="oldprice">₹8999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+      <img src="media/download (3).jpeg" alt="Shoe 4" />
+      <h2>White Cloud Shoe</h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> Shiney White</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹6999/-</strong><span class="oldprice">₹7999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="card">
+      <img src="media/download (4).jpeg" alt="Shoe 5" />
+      <h2>White Cloud </h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> Pink white</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹7999/-</strong><span class="oldprice">₹8999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+
+     <!-- CARD 6 -->
+    <div class="card">
+      <img src="media/download (5).jpeg" alt="Shoe 5" />
+      <h2>Velocity Pro</h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> Glitter white</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹6999/-</strong><span class="oldprice">₹8999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+
+     <!-- CARD 7 -->
+    <div class="card">
+      <img src="media/download (6).jpeg" alt="Shoe 7" />
+      <h2>Keychain Core</h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> White with chain</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹3999/-</strong><span class="oldprice">₹6999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+
+
+     <!-- CARD 8 -->
+    <div class="card">
+      <img src="media/Women White Lace Up Front Sneakers, Minimalist Round Toe Chunky Sneakers.jpeg" alt="Shoe 8" />
+      <h2>Cloud Shoe</h2>
+      <p class="des"><strong>Comfortable and stylish running shoes with premium cushioning</strong></p>
+      <div class="color"><strong>Color:</strong> White</div>
+      <div class="size"><strong>Size:</strong>
+        <div>6</div><div>7</div><div>8</div><div>9</div>
+      </div>
+      <p class="rate"><strong>₹4999/-</strong><span class="oldprice">₹6999/-</span></p>
+      <button class="button">Add to cart</button>
+    </div>
+
+  
+</body>
+</html>
